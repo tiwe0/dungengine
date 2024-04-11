@@ -1,0 +1,31 @@
+[
+{
+  "directory": "/Users/ivory/Project/dungengine",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/dungengine/macosx/arm64/release/src/renderLayer.cpp.o", "src/renderLayer.cpp"],
+  "file": "src/renderLayer.cpp"
+},
+{
+  "directory": "/Users/ivory/Project/dungengine",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/dungengine/macosx/arm64/release/src/glyph.cpp.o", "src/glyph.cpp"],
+  "file": "src/glyph.cpp"
+},
+{
+  "directory": "/Users/ivory/Project/dungengine",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/dungengine/macosx/arm64/release/src/painter.cpp.o", "src/painter.cpp"],
+  "file": "src/painter.cpp"
+},
+{
+  "directory": "/Users/ivory/Project/dungengine",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/dungengine/macosx/arm64/release/src/globals.cpp.o", "src/globals.cpp"],
+  "file": "src/globals.cpp"
+},
+{
+  "directory": "/Users/ivory/Project/dungengine",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/dungengine/macosx/arm64/release/src/structs.cpp.o", "src/structs.cpp"],
+  "file": "src/structs.cpp"
+},
+{
+  "directory": "/Users/ivory/Project/dungengine",
+  "arguments": ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang", "-c", "-Qunused-arguments", "-target", "arm64-apple-macos14.0", "-isysroot", "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/dungengine/macosx/arm64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+}]

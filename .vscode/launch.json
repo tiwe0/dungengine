@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/ivory/Project/dungengine/src",
+      "program": "/Users/ivory/Project/dungengine/src/build/Debug/outDebug"
+    }
+  ]
+}
