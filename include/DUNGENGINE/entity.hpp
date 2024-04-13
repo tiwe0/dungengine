@@ -8,8 +8,8 @@ class Entity
 private:
     /* data */
 public:
-    Vect2* position;
+    Vect2 position;
     Entity(/* args */);
-    ~Entity();
+    virtual ~Entity();
 };
 #endif

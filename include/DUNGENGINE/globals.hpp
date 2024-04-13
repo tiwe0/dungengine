@@ -9,6 +9,9 @@
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
 
+#define DUNGEON_WIDTH 80
+#define DUNGEON_HEIGHT 60
+
 #define PERSPECTIVE_DEPTH 800
 
 #define ZDEPTH 32

@@ -9,5 +9,6 @@
 #include "DUNGENGINE/renderLayer.hpp"
 #include "DUNGENGINE/utils.hpp"
 #include "DUNGENGINE/input.hpp"
+#include "DUNGENGINE/god.hpp"
 
 #endif
