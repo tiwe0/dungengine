@@ -1,4 +1,5 @@
 #include <map>
+#include <vector>
 
 #include "DUNGENGINE/gamemap.hpp"
 #include "DUNGENGINE/utils.hpp"
