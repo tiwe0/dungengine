@@ -1,7 +1,9 @@
 #ifndef DUNGENGINE_GUNGENGINE
 #define DUNGENGINE_GUNGENGINE
 
-#include "DUNGENGINE/entity.hpp"
+#include <iostream>
+
+#include "DUNGENGINE/entities/entity.hpp"
 #include "DUNGENGINE/gamemap.hpp"
 #include "DUNGENGINE/globals.hpp"
 #include "DUNGENGINE/glyph.hpp"

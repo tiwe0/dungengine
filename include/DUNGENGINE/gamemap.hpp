@@ -3,7 +3,9 @@
 #include <map>
 #include <unordered_set>
 #include "DUNGENGINE/utils.hpp"
-#include "DUNGENGINE/entity.hpp"
+#include "DUNGENGINE/entities/entity.hpp"
+#include "gametime.hpp"
+#include "painter.hpp"
 
 struct VectCompare
 {
@@ -42,6 +44,8 @@ class GameMap
 {
 public:
     Vect2 mapSize;
+    Vect2 glyphSize;
+
     std::map<Vect2, std::unordered_set<Entity *>, VectCompare> positionManager;
 
     GameMap();
@@ -52,6 +56,13 @@ public:
     bool entityUnregister(Entity *entity);
     bool entityDestroy(Entity *entity);
     bool entityPlace(Entity *entity, Vect2 position);
+
+    bool positionIsValid(Vect2 &position);
+
+    std::unordered_set<Entity *> &getEntitiesAtPosition(Vect2 &position);
+    Entity *getRenderEntityAtPosition(Vect2 &position);
+
+    void testInit();
 };
 
 #endif

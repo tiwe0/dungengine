@@ -6,6 +6,7 @@ private:
     /* data */
 public:
     int x, y;
+    Vect2();
     Vect2(int x, int y);
     ~Vect2();
     Vect2 operator+(Vect2 & o);

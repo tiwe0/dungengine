@@ -4,7 +4,7 @@
 
 #include "DUNGENGINE/gamemap.hpp"
 #include "DUNGENGINE/utils.hpp"
-#include "DUNGENGINE/entity.hpp"
+#include "DUNGENGINE/entities/entity.hpp"
 #include "DUNGENGINE/globals.hpp"
 
 GameMap::GameMap() : mapSize(DUNGEON_WIDTH, DUNGEON_HEIGHT) {}
@@ -59,3 +59,32 @@ bool GameMap::entityPlace(Entity *ptr_entity, Vect2 targetPosition)
     this->entityRegister(ptr_entity);
     return true;
 }
+
+bool GameMap::positionIsValid(Vect2 &position)
+{
+    return position.x >= 0 && position.x < this->mapSize.x && position.y >= 0 && position.y < this->mapSize.y;
+}
+
+std::unordered_set<Entity *> &GameMap::getEntitiesAtPosition(Vect2 &position)
+{
+    return this->positionManager[position];
+}
+
+Entity* GameMap::getRenderEntityAtPosition(Vect2 &position)
+{
+    std::unordered_set<Entity *> &entities = getEntitiesAtPosition(position);
+    int currentRenderPriority = 0;
+    Entity *currentEntity = nullptr;
+    for (Entity *entity : entities)
+    {
+        if(entity->renderPriority > currentRenderPriority)
+        {
+            currentRenderPriority = entity->renderPriority;
+            currentEntity = entity;
+        }
+    }
+    return currentEntity;
+}
+
+void GameMap::testInit()
+{}
