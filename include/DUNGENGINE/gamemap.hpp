@@ -5,7 +5,6 @@
 #include "DUNGENGINE/utils.hpp"
 #include "DUNGENGINE/entities/entity.hpp"
 #include "gametime.hpp"
-#include "painter.hpp"
 
 struct VectCompare
 {
