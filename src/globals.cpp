@@ -16,3 +16,5 @@ Vect2 gGlyphSize = Vect2(GLYPH_SIZE, GLYPH_SIZE);
 int gPerspectiveDepth = PERSPECTIVE_DEPTH;
 
 bool gQuit = false;
+bool gTimeFly = false;
+bool gTurnShouldElapse = false;

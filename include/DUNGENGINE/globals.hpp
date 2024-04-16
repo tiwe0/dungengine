@@ -5,9 +5,13 @@
 #include "SDL2/SDL_ttf.h"
 #include "DUNGENGINE/utils.hpp"
 
+#define SCREEN_TITLE "Dungengine"
 
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
+
+#define DUNGEON_WIDTH 80
+#define DUNGEON_HEIGHT 60
 
 #define PERSPECTIVE_DEPTH 800
 
@@ -28,5 +32,7 @@ extern Vect2 gPerspectivePosition;
 extern Vect2 gGlyphSize;
 extern int gPerspectiveDepth;
 extern bool gQuit;
+extern bool gTimeFly;
+extern bool gPlayerTurnShouldElapse;
 
 #endif

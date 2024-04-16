@@ -1,0 +1,2 @@
+glyph的格式为
+name|glyph_text|glyph_color

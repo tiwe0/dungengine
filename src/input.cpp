@@ -3,42 +3,51 @@
 
 void InputHandler::handleKeyboard(SDL_Event &e)
 {
-    switch (e.type)
+    switch (e.key.keysym.sym)
     {
-    case SDL_QUIT:
+    case SDLK_UP:
+        gPerspectiveDepth += GLYPH_SIZE;
+        printf("increase gPerspectiveDepth: %d\n", gPerspectiveDepth);
+        break;
+    case SDLK_DOWN:
+        gPerspectiveDepth -= GLYPH_SIZE;
+        printf("decrease gPerspectiveDepth: %d\n", gPerspectiveDepth);
+        break;
+    case SDLK_q:
         gQuit = true;
         break;
+    case SDLK_w:
+        gViewPosition.y -= GLYPH_SIZE;
+        break;
+    case SDLK_a:
+        gViewPosition.x -= GLYPH_SIZE;
+        break;
+    case SDLK_s:
+        gViewPosition.y += GLYPH_SIZE;
+        break;
+    case SDLK_d:
+        gViewPosition.x += GLYPH_SIZE;
+        break;
 
+    default:
+        break;
+    }
+}
+
+void InputHandler::handleInput()
+{
+    SDL_Event e;
+    SDL_WaitEvent(&e);
+
+    switch (e.type)
+    {
     case SDL_KEYDOWN:
-        switch (e.key.keysym.sym)
-        {
-        case SDLK_UP:
-            gPerspectiveDepth+=10;
-            printf("increase gPerspectiveDepth: %d\n", gPerspectiveDepth);
-            break;
-        case SDLK_DOWN:
-            gPerspectiveDepth-=10;
-            printf("decrease gPerspectiveDepth: %d\n", gPerspectiveDepth);
-            break;
-        case SDLK_q:
-            gQuit = true;
-            break;
-        case SDLK_w:
-            gViewPosition.y -= 10;
-            break;
-        case SDLK_a:
-            gViewPosition.x -= 10;
-            break;
-        case SDLK_s:
-            gViewPosition.y += 10;
-            break;
-        case SDLK_d:
-            gViewPosition.x += 10;
-            break;
+        handleKeyboard(e);
+        gPlayerTurnShouldElapse = true;
+        break;
 
-        default:
-            break;
-        }
+    case SDL_QUIT:
+        gQuit = true;
 
     default:
         break;
